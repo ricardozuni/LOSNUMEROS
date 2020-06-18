@@ -1,0 +1,333 @@
+<!DOCTYPE HTML5>
+
+<html lang="es">
+<head>
+<meta charset="utf-8">
+    <title>Las Vocales y Numeros</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.numero').mouseover(function(){
+		var tx =document.getElementById(this.id);
+		var idA=tx.id.replace("img","").toLowerCase();
+		//alert( tx.id.replace("img","").toLowerCase());
+		var audio = 0;
+		switch (idA) {
+		  case "uno":
+			audio=0;
+			break;
+		  case "dos": 
+			audio=1;
+			break;
+		  case "tres":
+			audio=2;
+			break; 
+		  case "cuatro":
+			audio=3;
+			break;
+		case "cinco":
+			audio=4;
+			break;
+		case "seis":
+			audio=5;
+			break;
+		case "siete":
+			audio=6;
+			break;		
+		case "ocho":
+			audio=7;
+			break;
+		case "nueve":
+			audio=8;
+			break;	
+		case "diez":
+			audio=9;
+			break;			
+		  //default:
+			//console.log('default');
+		}
+		$('audio')[audio].play();	
+		});
+		$('.vocales').mouseover(function(){
+		var tx2 =document.getElementById(this.id);
+		var idA2=tx2.id.replace("img","");
+		//alert( tx.id.replace("img","").toLowerCase());
+		var audio2 = -1;
+		switch (idA2) {
+		  case "A_may":
+			audio2=10;
+			break;
+		  case"A_min":
+			audio2=10;
+			break;
+		  case "E_may": 
+			audio2=11;
+			break;
+		  case "E_min":
+			audio2=11;
+			break;
+		  case "I_may":
+			audio2=12;
+			break; 
+		  case "I_min":
+			audio2=12;
+		    break; 
+		  case "O_may":
+			audio2=13;
+			break;
+		  case "O_min":
+			audio2=13;
+			break;	
+		case "U_may":
+			audio2=14;
+			break;
+		case "U_min":
+			audio2=14;
+			break;
+		case "Abeja":
+			audio2=15;
+			break;
+		case "Ambulancia":
+			audio2=16;
+			break;
+		case "Elefante":
+			audio2=17;
+			break;
+		case "Estrella":
+			audio2=18;
+			break;
+		case "Iman":
+			audio2=19;
+			break;
+		case "Isla":
+			audio2=20;
+			break;		
+		case "Oso":
+			audio2=21;
+			break;
+		case "Oveja":
+			audio2=22;
+			break;
+		case "Uva":
+			audio2=23;
+			break;	
+		case "Unicornio":
+			audio2=24;
+			break;	
+	/*	case "seis":
+			audio=5;
+			break;
+		case "siete":
+			audio=6;
+			break;		
+		case "ocho":
+			audio=7;
+			break;
+		case "nueve":
+			audio=8;
+			break;	
+		case "diez":
+			audio=9;
+			break;			
+		  //default:
+			//console.log('default');
+		*/	
+		}
+		$('audio')[audio2].play();	
+		});
+	});
+	</script>
+</head>
+<body>
+    <form id="form1" runat="server">
+	<h1>Las Vocales</h1>
+	<br />
+	<br />
+        <div style="height: 1037px; width: 845px">
+            <img id="imgA_may"  class="vocales" alt="" src="Resources/Img/A_may.PNG" style="height: 200px; width: 200px" />
+			<img id="imgAbeja"  class="vocales" alt="" src="Resources/Img/abeja.PNG" style="height: 200px; width: 200px" />
+			<img id="imgA_min"  class="vocales" alt="" src="Resources/Img/A_min.PNG" style="height: 200px; width: 200px" />
+			<img id="imgAmbulancia"  class="vocales" alt="" src="Resources/Img/ambulancia.PNG" style="height: 200px; width: 200px" /><br />
+            <img id="imgE_may"  class="vocales" alt="" src="Resources/Img/E_may.PNG" style="height: 200px; width: 200px" />
+			<img id="imgElefante"  class="vocales" alt="" src="Resources/Img/elefante.PNG" style="height: 200px; width: 200px" />
+			<img id="imgE_min"  class="vocales" alt="" src="Resources/Img/E_min.PNG" style="height: 200px; width: 200px" />
+			<img id="imgEstrella"  class="vocales" alt="" src="Resources/Img/estrella.PNG" style="height: 200px; width: 200px" /><br />
+            <img id="imgI_may"  class="vocales" alt="" src="Resources/Img/I_may.PNG" style="height: 200px; width: 200px" />
+			<img id="imgIman"  class="vocales" alt="" src="Resources/Img/iman.PNG" style="height: 200px; width: 200px" />
+			<img id="imgI_min"  class="vocales" alt="" src="Resources/Img/I_min.PNG" style="height: 200px; width: 200px" />
+			<img id="imgIsla"  class="vocales" alt="" src="Resources/Img/isla.PNG" style="height: 200px; width: 200px" /><br />
+            <img id="imgO_may"  class="vocales" alt="" src="Resources/Img/O_may.PNG" style="height: 200px; width: 200px" />
+			<img id="imgOso"  class="vocales" alt="" src="Resources/Img/oso.PNG" style="height: 200px; width: 200px" />
+			<img id="imgO_min"  class="vocales" alt="" src="Resources/Img/O_min.PNG" style="height: 200px; width: 200px" />
+			<img id="imgOveja"  class="vocales" alt="" src="Resources/Img/oveja.PNG" style="height: 200px; width: 200px" /><br />
+            <img id="imgU_may"  class="vocales" alt="" src="Resources/Img/U_may.PNG" style="height: 200px; width: 200px" />
+			<img id="imgUva"   class="vocales"alt="" src="Resources/Img/uva.PNG" style="height: 200px; width: 200px" />
+			<img id="imgU_min"  class="vocales" alt="" src="Resources/Img/U_min.PNG" style="height: 200px; width: 200px" />
+			<img id="imgUnicornio"  class="vocales" alt="" src="Resources/Img/unicornio.PNG" style="height: 200px; width: 200px" />
+		</div>
+    </form>
+<br />
+<br />
+<h1>Los Numeros  del 1 al 10</h1>
+<br />
+<br />
+<br />
+
+       <div style="height: 500px; width: 760px">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <img id="imgUno" class="numero"   alt="" src="Resources/Img/UNO.PNG" style="height: 200px; width: 120px" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <img id="imgDos" class="numero"  alt="" src="Resources/Img/DOS.PNG" style="height: 200px; width: 120px" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <img id="imgTres" class="numero"  alt="" src="Resources/Img/TRES.PNG" style="height: 200px; width: 120px" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <img id="imgCuatro" class="numero"  alt="" src="Resources/Img/CUATRO.PNG" style="height: 200px; width: 120px" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <img id="imgCinco" class="numero"  alt="" src="Resources/Img/CINCO.PNG" style="height: 200px; width: 120px" /><br />
+            <br />
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <img id="imgSeis" class="numero"  alt="" src="Resources/Img/SEIS.PNG" style="height: 200px; width: 120px" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <img id="imgSiete" class="numero"  alt="" src="Resources/Img/SIETE.PNG" style="height: 200px; width: 120px" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <img id="imgOcho" class="numero"  alt="" src="Resources/Img/OCHO.PNG" style="height: 200px; width: 120px" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <img id="imgNueve" class="numero"  alt="" src="Resources/Img/NUEVE.PNG" style="height: 200px; width: 120px" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <img id="imgDiez" class="numero"  alt="" src="Resources/Img/DIEZ.PNG" style="height: 200px; width: 120px" />
+ 
+		
+            <!-- <img id="imgUno" class="numero" alt="" src="Resources/Img/UNO.PNG" style="height: 200px; width: 120px" /> -->
+            <!-- <img id="imgDos" class="numero" alt="" src="Resources/Img/DOS.PNG" style="height: 200px; width: 120px" /> -->
+            <!-- <img id="imgTres" class="numero" alt="" src="Resources/Img/TRES.PNG" style="height: 200px; width: 120px" /> -->
+            <!-- <img id="imgCuatro" class="numero" alt="" src="Resources/Img/CUATRO.PNG" style="height: 200px; width: 120px" /> -->
+            <!-- <img id="imgCinco" class="numero" alt="" src="Resources/Img/CINCO.PNG" style="height: 200px; width: 120px" /><br /> -->
+            <!-- <img id="imgSeis" class="numero" alt="" src="Resources/Img/SEIS.PNG" style="height: 200px; width: 120px" /> -->
+            <!-- <img id="imgSiete" class="numero" alt="" src="Resources/Img/SIETE.PNG" style="height: 200px; width: 120px" /> -->
+            <!-- <img id="imgOcho" class="numero" alt="" src="Resources/Img/OCHO.PNG" style="height: 200px; width: 120px" /> -->
+            <!-- <img id="imgNueve" class="numero" alt="" src="Resources/Img/NUEVE.PNG" style="height: 200px; width: 120px" /> -->
+            <!-- <img id="imgDiez" class="numero" alt="" src="Resources/Img/DIEZ.PNG" style="height: 200px; width: 120px" /> -->
+		</div>
+   
+	<audio id="uno" preload>
+		<source src="Resources/Audio/uno.mp3" type="audio/mp3">
+		<source src="Resources/Audio/uno.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="dos" preload>
+		<source src="Resources/Audio/dos.mp3" type="audio/mp3">
+		<source src="Resources/Audio/dos.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="tres" preload>
+		<source src="Resources/Audio/tres.mp3" type="audio/mp3">
+		<source src="Resources/Audio/tres.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="cuatro" preload>
+		<source src="Resources/Audio/cuatro.mp3" type="audio/mp3">
+		<source src="Resources/Audio/cuatro.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="cinco" preload>
+		<source src="Resources/Audio/cinco.mp3" type="audio/mp3">
+		<source src="Resources/Audio/cinco.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="seis" preload>
+		<source src="Resources/Audio/seis.mp3" type="audio/mp3">
+		<source src="Resources/Audio/seis.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="siete" preload>
+		<source src="Resources/Audio/siete.mp3" type="audio/mp3">
+		<source src="Resources/Audio/siete.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="ocho" preload>
+		<source src="Resources/Audio/ocho.mp3" type="audio/mp3">
+		<source src="Resources/Audio/ocho.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="nueve" preload>
+		<source src="Resources/Audio/nueve.mp3" type="audio/mp3">
+		<source src="Resources/Audio/nueve.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="diez" preload>
+		<source src="Resources/Audio/diez.mp3" type="audio/mp3">
+		<source src="Resources/Audio/diez.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="voc_A" preload>
+		<source src="Resources/Audio/a.mp3" type="audio/mp3">
+		<source src="Resources/Audio/a.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="voc_E" preload>
+		<source src="Resources/Audio/e.mp3" type="audio/mp3">
+		<source src="Resources/Audio/e.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="voc_I" preload>
+		<source src="Resources/Audio/i.mp3" type="audio/mp3">
+		<source src="Resources/Audio/i.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="voc_O" preload>
+		<source src="Resources/Audio/o.mp3" type="audio/mp3">
+		<source src="Resources/Audio/o.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="voc_U" preload>
+		<source src="Resources/Audio/u.mp3" type="audio/mp3">
+		<source src="Resources/Audio/u.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="voc_abeja" preload>
+		<source src="Resources/Audio/abeja.mp3" type="audio/mp3">
+		<source src="Resources/Audio/abeja.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="voc_ambulacia" preload>
+		<source src="Resources/Audio/ambulancia.mp3" type="audio/mp3">
+		<source src="Resources/Audio/ambulancia.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="voc_elefante" preload>
+		<source src="Resources/Audio/elefante.mp3" type="audio/mp3">
+		<source src="Resources/Audio/elefante.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="voc_estrella" preload>
+		<source src="Resources/Audio/estrella.mp3" type="audio/mp3">
+		<source src="Resources/Audio/estrella.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="voc_iman" preload>
+		<source src="Resources/Audio/iman.mp3" type="audio/mp3">
+		<source src="Resources/Audio/iman.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="voc_isla" preload>
+		<source src="Resources/Audio/isla.mp3" type="audio/mp3">
+		<source src="Resources/Audio/isla.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="voc_oso" preload>
+		<source src="Resources/Audio/oso.mp3" type="audio/mp3">
+		<source src="Resources/Audio/oso.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="voc_oveja" preload>
+		<source src="Resources/Audio/oveja.mp3" type="audio/mp3">
+		<source src="Resources/Audio/oveja.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="voc_uva" preload>
+		<source src="Resources/Audio/uva.mp3" type="audio/mp3">
+		<source src="Resources/Audio/uva.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	<audio id="voc_unicornio" preload>
+		<source src="Resources/Audio/unicornio.mp3" type="audio/mp3">
+		<source src="Resources/Audio/unicornio.ogg" type="audio/ogg">
+		Tu navegador no soporta audio HTML5!
+	</audio>
+	
+</body>
+<footer>Desarrollado por FyC, 2020 Santiago, Chile </footer>
+</html>
